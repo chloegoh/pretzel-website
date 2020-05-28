@@ -4,12 +4,12 @@
   padding: 0;
   border: 0;
   outline: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: "Roboto Slab", serif;
 }
 
-header {
+*header {
   width: 100vw;
-  height: 40px;
 }
 
 #nav_bar {
@@ -25,6 +25,8 @@ a {
   color: #ebe5db;
   text-align: center;
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 2s;
 }
 
 a:hover {
@@ -35,4 +37,35 @@ a:hover {
 a.active {
   text-underline-position: under;
   text-decoration: underline;
+}
+
+/*@keyframes slide_nav {
+  from {
+    margin-left: -100%;
+    width: 300;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}*/
+
+/* Style about.html content */
+#about {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+#about img {
+  display: block;
+  margin: 30px auto 30px auto;
+}
+
+#about p {
+  margin: 20px;
+  text-align: justify;
 }
