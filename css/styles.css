@@ -62,10 +62,12 @@ a.active {
 
 #about img {
   display: block;
-  margin: 30px auto 30px auto;
+  margin: 50px auto 30px auto;
 }
 
 #about p {
   margin: 20px;
-  text-align: justify;
+  text-align: center;
+  color: #b35417;
+  font-weight: 300;
 }
