@@ -4,7 +4,6 @@
   padding: 0;
   border: 0;
   outline: 0;
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-family: "Roboto Slab", serif;
 }
 
@@ -29,7 +28,7 @@ a {
   transition-duration: 2s;
 }
 
-/* Change nav color on hover */
+/* Change link color on hover */
 a:hover {
   color: #354739;
   background-color: #ce8523;
@@ -43,7 +42,7 @@ a.active {
 
 /* Style about.html content */
 #about {
-  width: 800px;
+  width: 750px;
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
@@ -54,17 +53,17 @@ a.active {
   display: block;
   margin: 50px auto 30px auto;
   /* Add animation */
-  animation: slide_img 3s 1;
+  animation: slide_img 1s 1;
 }
 
 /* Create sliding effect for image */
 @keyframes slide_img {
   0% {
-    margin-left: 500px;
+    margin-left: 300px;
   }
 
   50% {
-    margin-left: -200px;
+    margin-left: -30px;
   }
 
   100% {
@@ -83,17 +82,35 @@ a.active {
 .col1 {
   color: #ebe5db;
   background-color: #b35417;
+  width: 1%;
+  transition-property: width;
+  transition-duration: 0.5s;
 }
 
 .col2 {
-  color: #b35417;
+  color: black;
   background-color: #ebe5db;
+  width: 1%;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.col1 p {
+  background-color: black;
+}
+
+.col2 p {
+  background-color: #b35417;
 }
 
 #gallery p {
   display: inline;
   font-size: 50px;
-  background-color: black;
+  /*visibility: hidden;*/
+  transition-property: visibility;
+  transition-duration: 1s;
+  transition-delay: 5s;
 }
 
 #gallery img {
@@ -101,7 +118,7 @@ a.active {
   opacity: 0;
   /* Add transition */
   transition-property: opacity;
-  transition-duration: 3s;
-  transition-delay: 1s;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
   transition-timing-function: ease-in-out;
 }
