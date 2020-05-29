@@ -107,6 +107,7 @@ a.active {
 #gallery p {
   display: inline;
   font-size: 50px;
+  cursor: default;
   /*visibility: hidden;*/
   transition-property: visibility;
   transition-duration: 1s;
