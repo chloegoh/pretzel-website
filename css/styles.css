@@ -106,12 +106,10 @@ a.active {
 
 #gallery p {
   display: inline;
-  font-size: 50px;
+  font-size: 10px;
   cursor: default;
-  /*visibility: hidden;*/
-  transition-property: visibility;
-  transition-duration: 1s;
-  transition-delay: 5s;
+  transition-property: font-size;
+  transition-duration: 0.2s;
 }
 
 #gallery img {

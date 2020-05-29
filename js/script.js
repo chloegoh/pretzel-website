@@ -2,8 +2,6 @@ function load_gallery() {
   // get gallery columns
   var col1 = document.getElementsByClassName("col1");
   var col2 = document.getElementsByClassName("col2");
-  // get gallery captions
-  var para = document.getElementsByTagName("P");
 
   // create slide in effect for columns
   for (let i = 0; i < col1.length; ++i) {
@@ -15,10 +13,6 @@ function load_gallery() {
   }
 
   load_images();
-
-  /*for (let i = 0; i < para.length; ++i) {
-    para[i].style.visibility = "visible";
-  }*/
   load_captions();
 }
 
@@ -44,6 +38,7 @@ function load_captions() {
     "Sour Cream and Onion Pretzel",
   ];
 
+  // add caption after 1 second
   setTimeout(function () {
     for (let i = 0; i < divs.length; ++i) {
       var new_element = document.createElement("p");
@@ -51,4 +46,17 @@ function load_captions() {
       divs[i].appendChild(new_element);
     }
   }, 1000);
+
+  animate_caption();
+}
+
+function animate_caption() {
+  // animate caption after 1 second
+  setTimeout(function () {
+    // get gallery captions
+    var para = document.getElementById("gallery").getElementsByTagName("P");
+    for (let i = 0; i < para.length; ++i) {
+      para[i].style.fontSize = "50px";
+    }
+  }, 1040);
 }
