@@ -100,14 +100,15 @@ a.active {
   transition-delay: 0.2s;
 }
 
+/* Style image captions */
 #gallery p {
-  /*display: inline;*/
   font-size: 10px;
   cursor: default;
   transition-property: font-size;
   transition-duration: 0.2s;
 }
 
+/* Style gallery.html images */
 #gallery img {
   vertical-align: middle;
   opacity: 0;
@@ -116,4 +117,38 @@ a.active {
   transition-duration: 0.5s;
   transition-delay: 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+#recipe h1,
+#recipe h2 {
+  padding: 15px;
+}
+
+#ingredients {
+  text-align: center;
+  padding: 15px 0px 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #354739;
+  background-color: #ce8523;
+}
+
+#ingredients ul {
+  list-style: none;
+}
+
+#ingredients li,
+#steps p {
+  font-size: 20px;
+  line-height: 1.6em;
+  font-style: italic;
+}
+
+#steps {
+  text-align: center;
+  padding: 15px 220px 30px 220px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #b35417;
+  background-color: #ebe5db;
 }
