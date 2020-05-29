@@ -29,27 +29,17 @@ a {
   transition-duration: 2s;
 }
 
+/* Change nav color on hover */
 a:hover {
   color: #354739;
   background-color: #ce8523;
 }
 
+/* Underline active link */
 a.active {
   text-underline-position: under;
   text-decoration: underline;
 }
-
-/*@keyframes slide_nav {
-  from {
-    margin-left: -100%;
-    width: 300;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}*/
 
 /* Style about.html content */
 #about {
@@ -63,6 +53,23 @@ a.active {
 #about img {
   display: block;
   margin: 50px auto 30px auto;
+  /* Add animation */
+  animation: slide_img 3s 1;
+}
+
+/* Create sliding effect for image */
+@keyframes slide_img {
+  0% {
+    margin-left: 500px;
+  }
+
+  50% {
+    margin-left: -200px;
+  }
+
+  100% {
+    margin-left: 150px;
+  }
 }
 
 #about p {
@@ -70,4 +77,31 @@ a.active {
   text-align: center;
   color: #b35417;
   font-weight: 300;
+}
+
+/* Style gallery.html divs */
+.col1 {
+  color: #ebe5db;
+  background-color: #b35417;
+}
+
+.col2 {
+  color: #b35417;
+  background-color: #ebe5db;
+}
+
+#gallery p {
+  display: inline;
+  font-size: 50px;
+  background-color: black;
+}
+
+#gallery img {
+  vertical-align: middle;
+  opacity: 0;
+  /* Add transition */
+  transition-property: opacity;
+  transition-duration: 3s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out;
 }
