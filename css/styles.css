@@ -80,6 +80,8 @@ a.active {
 
 /* Style gallery.html divs */
 .col1 {
+  display: flex;
+  align-items: center;
   color: #ebe5db;
   background-color: #b35417;
   width: 1%;
@@ -88,7 +90,9 @@ a.active {
 }
 
 .col2 {
-  color: black;
+  display: flex;
+  align-items: center;
+  color: #b35417;
   background-color: #ebe5db;
   width: 1%;
   transition-property: width;
@@ -96,16 +100,8 @@ a.active {
   transition-delay: 0.2s;
 }
 
-.col1 p {
-  background-color: black;
-}
-
-.col2 p {
-  background-color: #b35417;
-}
-
 #gallery p {
-  display: inline;
+  /*display: inline;*/
   font-size: 10px;
   cursor: default;
   transition-property: font-size;
