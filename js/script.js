@@ -27,6 +27,17 @@ function shrink_caption(x) {
   x.style.fontSize = "50px";
 }
 
+/****************************************************
+This function is called when an ingredient is clicked
+****************************************************/
+function toggle_strikethrough(x) {
+  if (x.style.textDecoration === "line-through") {
+    x.style.textDecoration = "none";
+  } else {
+    x.style.textDecoration = "line-through";
+  }
+}
+
 /********************************** 
 Implementation of Helper functions 
 **********************************/

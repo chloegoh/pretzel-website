@@ -41,43 +41,6 @@ a.active {
 }
 
 /* Style about.html content */
-/*#about {
-  width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 20px;
-  line-height: 1.6em;
-}
-
-#about img {
-  display: block;
-  margin: 50px auto 30px auto;*/
-/* Add animation */
-/*animation: slide_img 1s 1;
-}*/
-
-/* Create sliding effect for image */
-/*@keyframes slide_img {
-  0% {
-    margin-left: 300px;
-  }
-
-  50% {
-    margin-left: -30px;
-  }
-
-  100% {
-    margin-left: 150px;
-  }
-}
-
-#about p {
-  margin: 20px;
-  text-align: center;
-  color: #b35417;
-  font-weight: 300;
-}*/
-
 #about {
   display: flex;
 }
@@ -91,18 +54,6 @@ a.active {
   animation: slide_down 0.8s ease 0.1s 1;
 }
 
-/*@keyframes slide_in {
-  0% {
-    margin-right: -650px;
-    opacity: 0;
-  }
-
-  100% {
-    margin-right: 0px;
-    opacity: 1;
-  }
-}*/
-
 #description {
   width: 50%;
   padding: 60px 100px 60px 100px;
@@ -114,6 +65,7 @@ a.active {
   animation: slide_up 0.8s ease 0.1s 1;
 }
 
+/* slide_down animation in about.html */
 @keyframes slide_down {
   0% {
     opacity: 0.5;
@@ -126,6 +78,7 @@ a.active {
   }
 }
 
+/* slide_up animation in about.html */
 @keyframes slide_up {
   0% {
     opacity: 0.5;
@@ -138,12 +91,14 @@ a.active {
   }
 }
 
+/* Style pretzel heading */
 #description h1 {
   padding: 50px 0px 50px 0px;
   font-size: 60px;
   text-shadow: 5px 5px #ce8523;
 }
 
+/* Style pretzel intro font */
 #description p {
   font-weight: 700;
 }
