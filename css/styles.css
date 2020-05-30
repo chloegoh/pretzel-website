@@ -41,7 +41,7 @@ a.active {
 }
 
 /* Style about.html content */
-#about {
+/*#about {
   width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -51,13 +51,13 @@ a.active {
 
 #about img {
   display: block;
-  margin: 50px auto 30px auto;
-  /* Add animation */
-  animation: slide_img 1s 1;
-}
+  margin: 50px auto 30px auto;*/
+/* Add animation */
+/*animation: slide_img 1s 1;
+}*/
 
 /* Create sliding effect for image */
-@keyframes slide_img {
+/*@keyframes slide_img {
   0% {
     margin-left: 300px;
   }
@@ -76,6 +76,76 @@ a.active {
   text-align: center;
   color: #b35417;
   font-weight: 300;
+}*/
+
+#about {
+  display: flex;
+}
+
+#about img {
+  display: block;
+  /*width: 582px;
+  height: 873px;*/
+  width: 50%;
+  /*animation: slide_in 1.2s 1;*/
+  animation: slide_down 0.8s ease 0.1s 1;
+}
+
+/*@keyframes slide_in {
+  0% {
+    margin-right: -650px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-right: 0px;
+    opacity: 1;
+  }
+}*/
+
+#description {
+  width: 50%;
+  padding: 60px 100px 60px 100px;
+  font-size: 20px;
+  line-height: 1.6em;
+  cursor: default;
+  color: #b35417;
+  background-color: #ebe5db;
+  animation: slide_up 0.8s ease 0.1s 1;
+}
+
+@keyframes slide_down {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-975px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide_up {
+  0% {
+    opacity: 0.5;
+    transform: translateY(975px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#description h1 {
+  padding: 50px 0px 50px 0px;
+  font-size: 60px;
+  text-shadow: 5px 5px #ce8523;
+}
+
+#description p {
+  font-weight: 700;
 }
 
 /* Style gallery.html divs */
@@ -119,36 +189,83 @@ a.active {
   transition-timing-function: ease-in-out;
 }
 
-#recipe h1,
-#recipe h2 {
-  padding: 15px;
+/* Animate recipe.html */
+#recipe {
+  animation: open_up 0.3s 1;
 }
 
+@keyframes open_up {
+  0% {
+    opacity: 0.5;
+    width: 1%;
+    transform: translateX(600px);
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+    transform: translateX(0px);
+  }
+}
+
+/* Style recipe.html headings */
+/*#recipe h1,
+#recipe h2 {*/
+/*padding: 15px 0px 15px 0px;*/
+/*  padding: 30px 0px 30px 0px;
+}*/
+
+/* Style recipe.html headings */
+#recipe h1 {
+  padding: 30px 0px 30px 0px;
+  text-decoration: underline overline #ce8523 solid;
+  text-underline-position: under;
+}
+
+#recipe h2 {
+  padding: 30px 0px 30px 0px;
+  text-decoration: underline overline #b35417 solid;
+  text-underline-position: under;
+}
+
+/* Style ingredients div */
 #ingredients {
   text-align: center;
-  padding: 15px 0px 30px 0px;
+  /*padding: 15px 0px 30px 0px;*/
+  padding: 30px 0px 45px 0px;
   margin-left: auto;
   margin-right: auto;
-  color: #354739;
-  background-color: #ce8523;
+  cursor: default;
+  color: #b35417;
+  background-color: #ebe5db;
 }
 
+/* Remove list bullet */
 #ingredients ul {
   list-style: none;
 }
 
+/* Style ingredients and steps content */
 #ingredients li,
 #steps p {
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 25px;
   line-height: 1.6em;
+}
+
+/* Make ingredient list italic */
+#ingredients li {
   font-style: italic;
 }
 
+/* Style steps div */
 #steps {
-  text-align: center;
-  padding: 15px 220px 30px 220px;
+  text-align: left;
+  /*padding: 15px 220px 30px 220px;*/
+  padding: 30px 220px 45px 220px;
   margin-left: auto;
   margin-right: auto;
-  color: #b35417;
-  background-color: #ebe5db;
+  cursor: default;
+  color: #354739;
+  background-color: #ce8523;
 }
