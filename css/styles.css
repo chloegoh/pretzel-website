@@ -47,10 +47,7 @@ a.active {
 
 #about img {
   display: block;
-  /*width: 582px;
-  height: 873px;*/
   width: 50%;
-  /*animation: slide_in 1.2s 1;*/
   animation: slide_down 0.8s ease 0.1s 1;
 }
 
@@ -164,13 +161,6 @@ a.active {
 }
 
 /* Style recipe.html headings */
-/*#recipe h1,
-#recipe h2 {*/
-/*padding: 15px 0px 15px 0px;*/
-/*  padding: 30px 0px 30px 0px;
-}*/
-
-/* Style recipe.html headings */
 #recipe h1 {
   padding: 30px 0px 30px 0px;
   text-decoration: underline overline #ce8523 solid;
@@ -186,7 +176,6 @@ a.active {
 /* Style ingredients div */
 #ingredients {
   text-align: center;
-  /*padding: 15px 0px 30px 0px;*/
   padding: 30px 0px 45px 0px;
   margin-left: auto;
   margin-right: auto;
@@ -203,7 +192,6 @@ a.active {
 /* Style ingredients and steps content */
 #ingredients li,
 #steps p {
-  /*font-size: 20px;*/
   font-size: 25px;
   line-height: 1.6em;
 }
@@ -216,7 +204,6 @@ a.active {
 /* Style steps div */
 #steps {
   text-align: left;
-  /*padding: 15px 220px 30px 220px;*/
   padding: 30px 220px 45px 220px;
   margin-left: auto;
   margin-right: auto;
